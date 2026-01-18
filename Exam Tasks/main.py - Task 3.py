@@ -2,25 +2,28 @@
 """
 main.py
 
-This file demonstrates how to use the StringMan class from stringman.py.
+main.py demonstrates how to use the StringMan class from StringMan.py.
 """
 
 from stringman import StringMan
 
-# Create an object with a string and a delimiter
-text = "this is a simple string example"
+# This creates an object with a string
+text = input("Enter a sentence: ")
 delimiter = " "
-
 string_object = StringMan(text, delimiter)
 
-# Print the length of the string
+
+# This prints the length of the string
 string_object.length_of_str()
 
-# Split the string and store the result
+
+# This splits the string and stores the results
 words = string_object.str_split()
 
-# Print the word at a specific index
+
+# This prints the word at the index
 string_object.show_word(words, 2)
 
-# Print the index of a specific word
-string_object.show_index("simple")
+
+# This prints the index of that word
+string_object.show_index(words[2])
