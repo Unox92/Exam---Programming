@@ -38,19 +38,18 @@ print(title.upper().center(60))
 print()
 
 # This prints the second part, name, invoice no, address and amount due
-print(name + (invoice + invoice_nr).upper().rjust(54))
-print(addrs_label.ljust(24) + (amnt_label + amount_due).upper().rjust(36))
+print(name + (invoice + invoice_nr).upper().rjust(52))
+print(addrs_label.ljust(24) + (amnt_label + amount_due).upper().rjust(35))
 print()
 
 # This prints the description, items, cost, total
 print(descr_label.upper().ljust(16) + itms_lable.upper().rjust(8) + cost_label.upper().rjust(12) + ttl_label.upper().rjust(12))
 print("-" * 60)
 
-# Item row
-print(description_of_label.title().ljust(16) + items.rjust(8) + (cost + ".00").rjust(12) + (total + ".00").rjust(12))
-
+# This prints the description of the item bought, how many, the cost of one item and the total cost of two times
+print(description_of_label.title().ljust(16) + items.rjust(8) + (cost + ".00").rjust(12) + (total + ".00").rjust(24))
 print("-" * 60)
 
-# Total row
+# This prints the totcal cost
 print(ttl_label.title().ljust(48) + (total + ".00").rjust(12))
 print("-" * 60)
